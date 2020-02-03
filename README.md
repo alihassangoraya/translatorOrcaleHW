@@ -2,7 +2,7 @@
 
 You can simply download and run it in localhost. Its easier in MS code. You can open index.html and right click inside the code and select 'Open with Live Server'.
 
-First of all I wasn't sure that I should write the code using jQuery, Node or TypeScript. 
+First of all I wasn't sure that I should write the code using jQuery, Node or TypeScript. I can write in all these.
 
 So I decided to write in Vanilla JS by using some core as well as ES6+ features so that I can make sure that you understand what I am writing and what I am capable off.
 
