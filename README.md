@@ -16,7 +16,7 @@ Apart from that, I have tried to make it very generic so that if we have to add 
 
 For the source language, I have not used the API which takes the source language as an input, instead I have used the API which detects the source language automatically. But if required I can use that one also.
 I didn't use that because I think you just want to see the way how I consume the APIs.
-APIs can also be consumed using plain/vanila JS feature using XMLHttpRequest object but I prefered to use the moderen one with fetch method which also uses the promises.
+APIs can also be consumed using plain/vanila JS feature using XMLHttpRequest object but I prefered to use the modern one with fetch method which also uses the promises.
 
 I didn't make any check for the limit of length of source text but API should response for that if limit exceeds and I am displaying the errors.
 If you want to add or modify anything in it please let me know, I would love to do it. 
