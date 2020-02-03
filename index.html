@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Translator - Oracle HW
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="container">
+                <div class="inner-wrapper">
+                    <h3>Translator - Oracle HW</h3>
+                    <form method="POST" id="translation-form">
+                        <textarea name="sourceText" onkeyup="onChange(this)" required></textarea>
+                        <div>    
+                            <select name="sourceLang" onchange="onChange(this)">
+                                <option value="">Detect Language</option>
+                                <option value="en">English</option>
+                                <option value="cs">Czech</option>
+                                <option value="de">German</option>
+                                <option value="cs">Urdu</option>
+                            </select>
+                            <select name="targetLang" onchange="onChange(this)" required>
+                                <option value="">Target Language</option>
+                                <option value="es">Spanish</option>
+                                <option value="cs">Czech</option>
+                                <option value="ur">German</option>
+                                <option value="ur">Urdu</option>
+                            </select>
+                        </div>
+                        <div class="engines">
+                            <div>
+                                <input type="radio" name="engine" id="google" value="google" onclick="onChange(this)" checked>Google
+                                <input type="radio" name="engine" id="yandex" value="yandex" onclick="onChange(this)">Yandex
+                                <input type="radio" name="engine" id="apertium" value="apertium" onclick="onChange(this)">Apertium
+                                <input type="radio" name="engine" id="microsoft" value="microsoft" onclick="onChange(this)">Microsoft
+                            </div>
+                        </div>
+
+                        <input type="submit" name="translate" id="submit-button" class="submit-button" value="Translate"/>
+                    </form>
+
+                    <div id="on-message">
+
+                    </div>
+
+                    <div id="last-search-result">
+                        <div>Last Search Result was using '<span id="translation-engine"></span>'</div>
+                        <div>It was translated from '<span id="source-lang"></span>' to '<span id="target-lang"></span>'</div>
+                        <div>
+                            <div><b>Source Text:</b></div>
+                            <div id="source-text"></div>
+                            <div><b>Translated Text:</b></div>
+                            <div id="target-text"></div>
+                        </div>
+
+                        <a href="#" id="clear-history">Clear All History</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/consts.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/googleHelper.js"></script>
+        <script src="js/yandexHelper.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
