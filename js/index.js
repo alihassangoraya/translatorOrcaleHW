@@ -27,7 +27,7 @@ makeAPIRequest = (api, requestOptions) => {
         })
         .catch(error => {
             console.log('error', error);
-            getElement("on-message").innerHTML = error.message;
+            getElement("on-message").innerHTML = "Some Error occured, please contact support or check your internet connection.";
         });
 }
 
